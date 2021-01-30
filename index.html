@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./index.js"></script>
+    
+    
+    
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+  <div class="relative bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+  
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                  <span class="sr-only">Portfolio</span>
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: menu -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <a href="#ang-skills" class="font-medium text-gray-500 hover:text-gray-900">My skills</a>
+  
+              <a href="#works" class="font-medium text-gray-500 hover:text-gray-900">Portfolio</a>
+  
+              <a href="#contact" class="font-medium text-indigo-500 hover:text-gray-900">Contact</a>
+            </div>
+          </nav>
+        </div>
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div class="-mr-2">
+                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close main menu</span>
+                  <!-- Heroicon name: x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1" role="none">
+                <a href="#ang-skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">My skills</a>
+  
+                <a href="#works" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Portefolio</a>
+  
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Contact</a>
+  
+              </div>
+              <div role="none">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="sm:text-center lg:text-left">
+            <h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block xl:inline">
+                My name is</span>
+              <span class="size-title block text-indigo-600 xl:inline">Arthur,<br>
+                I am a front-end developer</span>
+            </h1>
+            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-ml sm:max-w-xl sm:mx-auto md:mt-5 md:text-base lg:mx-0">
+              
+I have been passionate about computers since a very young age and I am more interested in integration, I also like to use Photoshop software for different design creation
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="#ang-skills" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                  My skills
+                </a>
+                <div id="mydiv"></div>
+              </div>
+              <div class="mt-3 sm:mt-0 sm:ml-3">
+                <a href="#works" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                Work
+                </a>
+              </div>
+            </div>
+            <div class="height-background"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="size-background lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/471752-Grand-Canyon.jpg" alt="">
+    </div>
+  </div>
+  <!-- ici je rajoute une nouvelle div (block) qui ferrais office de nouvelle page sans pour autant actualiser le contenu pour l'utiliser comme angrage -->
+ 
+  <div id="ang-skills" class="card-skill">
+    <div class="img">  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGx0lbrWee89g/profile-displayphoto-shrink_100_100/0/1606485061594?e=1617235200&v=beta&t=_xKjCDEj-yJLdFOAECIUIL1F22mqComPLdwAauesEgk" alt="" class="img-profile rounded-full border-4 shadow-2xl border-white">
+    </div>
+<div class="card-profil font-extrabold bg-white relative shadow-2xl w-5/6 md:w-4/6  lg:w-3/6 xl:w-2/6 mx-auto">
+  
+  <div class="content-card font-sans antialiased">
+    <h1 class="title-card">Arthur De Meyer</h1>
+    <p class="p-card">
+      junior front-end developer</p>
+  </div>
+  <div class="flex justify-evenly my-5">
+    <a href="https://www.linkedin.com/in/arthur-de-meyer-1345641b7/" class="bg font-bold text-sm text-blue-800 w-full text-center py-3 hover:bg-blue-800 hover:text-white hover:shadow-lg">Linkdin</a>
+    <a href="" class="bg font-bold text-sm text-blue-400 w-full text-center py-3 hover:bg-blue-400 hover:text-white hover:shadow-lg">Twitter</a>
+    <a href="" class="bg font-bold text-sm text-yellow-600 w-full text-center py-3 hover:bg-yellow-600 hover:text-white hover:shadow-lg">Instagram</a>
+    <a href="" class="bg font-bold text-sm text-gray-600 w-full text-center py-3 hover:bg-gray-600 hover:text-white hover:shadow-lg">Blog</a>
+</div>
+
+<!-- on importe les skills directement sur la carte -->
+<section id="skill" >
+  <div class="container">
+      <div class="row mb-4">
+          <div class="col-sm-12">
+              <div class="skill-title py-2 border-shadow mt-2">
+                  <h1 class="text-center text-indigo-200 block text-center font-medium leading-6 px-6 py-4 bg-indigo-600">SKILLS</h1>
+              </div>
+          </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="skill-as-designer border-shadow p-3">
+                  <dl class="row">
+                    <dt class="col-sm-3 mt-2">HTML</dt>
+                    <dd class="col-sm-9 mt-2 "><span class="skill-bar html-bar bg-indigo-600"><span class="space-content text-right d-block mr-2 animation-blink">100%</span></span></dd>
+
+                    <dt class="col-sm-3 mt-2">CSS</dt>
+                    <dd class="col-sm-9 mt-2">
+                      <span class="skill-bar css-bar bg-indigo-600"><span class="space-content text-right d-block mr-2 animation-blink">100%</span></span>
+                    </dd>
+
+                    <dt class="col-sm-3 mt-2">BOOTSTRAP</dt>
+                    <dd class="col-sm-9 mt-2"><span class="skill-bar bootstrap-bar bg-indigo-600"><span class=" space-content text-right d-block mr-2 animation-blink">70%</span></span></dd>
+
+                    <dt class="col-sm-3 mt-2">PHOTOSHOP</dt>
+                    <dd class="col-sm-9 mt-2"><span class="skill-bar photoshop-bar bg-indigo-600"><span class=" space-content text-right d-block mr-2 animation-blink">70%</span></span></dd>
+
+                    <dt class="col-sm-3 mt-2">JAVASCRIPT</dt>
+                    <dd class="col-sm-9 mt-2"><span class="skill-bar javascript-bar bg-indigo-600"><span class="text-right d-block mr-2 js-bar animation-blink">30%</span></span></dd>
+                  </dl>  
+                  <dl class="row">
+                    <dt class="col-sm-3 mt-2">PHP</dt>
+                    <dd class="col-sm-9 mt-2"><span class="skill-bar php-bar bg-indigo-600"><span class="text-right d-block mr-2 animation-blink">40%</span></span></dd>
+
+                    <dt class="col-sm-3 mt-2">MYSQL</dt>
+                    <dd class="col-sm-9 mt-2"><span class="skill-bar mysql-bar bg-indigo-600"><span class="text-right d-block mr-2 my-bar animation-blink">50%</span></span></dd>
+
+                    <dt class="col-sm-3 mt-2">WORDPRESS</dt>
+                    <dd class="col-sm-9 mt-2">
+                      <span class="skill-bar wordpress-bar bg-indigo-600"><span class="text-right d-block mr-2 animation-blink">40%</span></span>
+                    </dd>
+                  </dl>
+              </div>
+          </div>
+        </div>
+</section>
+</div>
+<!-- mise en place d'un slider pour afficher les différente création -->
+<section id="works" class="portefolio">
+<div class="content-portefolio">
+<h1 class="portefolio-title text-indigo-600 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+  WORK
+</h1>
+
+<p class="paragraphe-title text-gray-500">You can find my different web creation or design
+</p>
+
+<div class="work-project">
+  <a href=""> <img class="img-project shadow-2xl" src="./img/Coming-soon.png" alt=""></a>
+  <a href=""> <img class="img-project shadow-2xl" src="./img/Coming-soon.png" alt=""></a>
+  
+<div class="img-block">
+  <a href=""> <img class="img-project shadow-2xl" src="./img/Coming-soon.png" alt=""></a>
+  <a href=""> <img class="img-project shadow-2xl" src="./img/Coming-soon.png" alt=""></a>
+</div>
+<div class="img-block">
+  <a href=""> <img class="img-project shadow-1xl" src="./img/Coming-soon.png" alt=""></a>
+  <a href=""> <img class="img-project shadow-2xl" src="./img/Coming-soon.png" alt=""></a>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</section>
+<section class="experience">
+  <div class="content-xp">
+    <h1 class="xp-title text-indigo-600 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">EXPERIENCE</h1>
+  </div>
+
+<ul class="timeline">
+  <!-- Item 1 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Web developer training</span>
+        <span class="time-wrapper"><span class="time">Sep 2020</span></span>
+      </div>
+      <div class="desc">
+        Fullstack web developer training that I had the chance to follow at O'clock which allows me today to design websites from a to z</div>
+    </div>
+  </li>
+
+  <!-- Item 2 -->
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">
+          commercial sedentary</span>
+        <span class="time-wrapper"><span class="time">Feb 2020</span></span>
+      </div>
+      <div class="desc">
+        commercial sedentary at the European Training Center this job taught me to surpass myself and make sure to achieve my goals today I know what I want and where I am going</div>
+    </div>
+  </li>
+
+  <!-- Item 3 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">McDonalds</span>
+        <span class="time-wrapper"><span class="time">JUL 2020</span></span>
+      </div>
+      <div class="desc">
+        Versatile catering employee, this job taught me teamwork and customer relations</div>
+    </div>
+  </li>
+</ul>
+  </section>
+  <div class="contact">
+  <div class="min-w-screen min-h-screen bg-white-900 flex items-center justify-center px-5 py-5">
+    <div id="contact" class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style="max-width:1000px">
+        <div class="md:flex w-full">
+            <div class="background-contact hidden md:block w-1/2 py-10 px-10">
+            <img class="img-contact" src="./img/5-Sign-up.png" alt="">
+            </div>
+            <div  class="w-full md:w-1/2 py-10 px-5 md:px-10">
+                <div class="text-center mb-10">
+                    <h1 class="font-bold text-3xl text-gray-900">CONTACT</h1>
+                    <p>For any professional contact please fill out the form</p>
+                </div>
+                <div>
+                    <div class="flex -mx-3">
+                        <div class="w-1/2 px-3 mb-5">
+                            <label for="" class="text-xs font-semibold px-1">Name</label>
+                            <div class="flex">
+                                <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
+                                <input type="text" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="w-1/2 px-3 mb-5">
+                            <label for="" class="text-xs font-semibold px-1">First name</label>
+                            <div class="flex">
+                                <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
+                                <input type="text" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="First name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex -mx-3">
+                        <div class="w-full px-3 mb-5">
+                            <label for="" class="text-xs font-semibold px-1">Email</label>
+                            <div class="flex">
+                                <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
+                                <input type="email" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="contact@example.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex -mx-3">
+                        <div class="w-full px-3 mb-12">
+                            <label for="" class="text-xs font-semibold px-1">Text</label>
+                            <div class="flex">
+                                <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-lock-outline text-gray-400 text-lg"></i></div>
+                                <textarea id="msg" name="user_message" class="w-full -ml-10 pl-10 pr-3 py-4 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Écrire ici.."></textarea>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex -mx-3">
+                        <div class="w-full px-3 mb-5">
+                            <button class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+   </body>
